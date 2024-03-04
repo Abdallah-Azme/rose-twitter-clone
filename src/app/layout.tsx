@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { AllSidesIcon } from "@radix-ui/react-icons";
 import Sidebar from "@/components/sidebar";
+import Followbar from "@/components/followbar/Followbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
             <div className="col-span-3 lg:col-span-2 border-x-[1px] border-neutral-800">
               {children}
             </div>
+            <Followbar />
           </div>
         </div>
       </body>
