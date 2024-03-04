@@ -1,4 +1,5 @@
 import { BsBellFill, BsHouseFill } from "react-icons/bs";
+import { FaUser } from "react-icons/fa";
 
 export const navItems = [
   {
@@ -14,6 +15,6 @@ export const navItems = [
   {
     label: "Profile",
     href: "/users/123",
-    icon: BsHouseFill,
+    icon: FaUser,
   },
 ];
