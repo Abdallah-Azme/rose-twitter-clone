@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { AllSidesIcon } from "@radix-ui/react-icons";
-import Sidebar from "@/components/sidebar";
+import Sidebar from "@/components/sidebar/Sidebar";
 import Followbar from "@/components/followbar/Followbar";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,16 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, "h-screen bg-black ")}>
-        <div className="container h-full mx-auto xl:px-30 max-w-6xl">
-          <div className="grid grid-cols-4 h-full">
-            <Sidebar />
-            <div className="col-span-3 lg:col-span-2 border-x-[1px] border-neutral-800">
-              {children}
-            </div>
-            <Followbar />
-          </div>
-        </div>
+      <body className={cn(inter.className, "h-screen bg-black/80 ")}>
+        {children}
       </body>
     </html>
   );
